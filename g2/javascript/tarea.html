@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicios</title>
+</head>
+<body>
+    <script>
+    /*
+1. Obtén del 1 al 255: Escribe un programa que devuelve un array con todos los números del 1 al 255.
+*/
+ 
+var arr= []
+for(i = 1; i<= 255; i++) {
+    arr.push(i)
+}
+console.log(arr);
+console.log("****************************")
+//2.Consigue pares hasta 1000: Escribe un programa que entregue la suma de todos los números pares del 1 al 1000 - Puedes usar un operador de módulo para este ejercicio. 
+
+var numPar= 0
+for ( i=0 ; i <= 1000; i++ ){
+    if(i % 2==0) {
+        numPar= numPar + i
+    }
+}
+console.log(numPar)
+console.log("****************************");
+
+//3.Suma impares hasta 5000: Escribe un programa que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).
+var numImpa= 0
+for ( i=0 ; i <= 1000; i++ ){
+    if(i % 2==1) {
+        numImpa= numImpa + i
+    }
+}
+console.log(numImpa)
+console.log("****************************");
+//4. Itera un array: Escribe un programa que devuelva la suma de todos los valores dentro de un array (ej:  [1,2,5] retorna 8. [-5,2,5,12] retorna 14). 
+
+var arrSum= [1,5,10,2]
+var resultado= 0
+for (i=0 ; i <arrSum.length; i++){
+        resultado= resultado + arrSum[i]
+}
+console.log(resultado)
+console.log("****************************");
+//5. Encuentra el mayor (max): Dado un array con múltiples valores, escribe un programa que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7). 
+var array = [1,5,2,8]
+var numMayor = 0
+for(i = 0 ; i <= array.length ; i++){
+    if (array[i] > numMayor ){
+        numMayor = array[i]
+    }
+}
+console.log(numMayor)
+console.log("****************************");
+
+
+
+//6. Encuentra el promedio (avg): Dado un array con múltiples valores, escribe un programa que devuelva el promedio de los valores (ej: para [1,3,5,7,20] el promedio es 7.2).
+
+console.log("promedio de los valores en el array - ej: [10,5,3]")
+var arrProm = [10,5,3]
+var sum = 0
+for (i = 0 ; i < arrProm.length ; i ++){
+    sum = sum + arrProm[i]
+}
+var prom = sum / arrProm.length
+console.log(prom)
+console.log("****************************");
+
+
+//7. Array de impares: Escribe un programa que devuelva un array de todos los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]). Pista: Usa el método ‘push’.
+var numImpa = []
+    for (i=1 ; i<= 49; i++){
+        if(i % 2 == 1){
+            numImpa.push(i)
+        }
+    }
+    console.log(numImpa)
+    console.log("****************************");
+    </script>
+</body>
+</html>
+

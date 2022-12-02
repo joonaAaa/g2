@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO FOR </title>
+</head>
+<body>
+    <script>
+
+/* UN CICLO ES UNA ESTRUCTURA QUE NOS PERMITE REPETIR NUESTRO CODIGO X NUMERO DE VECES*/
+// ES MUY COMUN UTILIZAR i COMO NOMBRE DE LA VARIABLE CREADA EN EL CICLO FOR
+//SE DECLARA UNA VARIABLE LLAMADA I QUE TIENE VALOR 0 (i=0)
+//DSP QUEREMOS QUE NUESTRO CICLO SE REPITA 10 VECES POR LO TANTO...
+//COLOCAMOS SI i ES MENOR O IGUAL A 10(i<= 10)
+// i AUMENTARA SU VALOR EN 1(i++)
+var NumTotal=[ ]
+for ( let i=0 ; i<= 10; i++ ){
+document.write( "hola wachos" + "<br>");//OSEA LO QUE ESCRIBA SE REPETIRA X CANTIDAD DE VECES
+
+}
+//CORRECTO
+
+console.clear();
+
+
+//SE CREA UN ARREGLO 
+// SE CREA UNA VARIABLE LLAMADO SumNum que vale 0
+//si SumNum es menor o igual a 10 
+// SumNum aumentara su valor
+var NumTotal=[ ]
+for ( let SumNum=0 ; SumNum<= 10; SumNum++ ){
+document.write( SumNum + "<br>");//OSEA LO QUE ESCRIBA SE REPETIRA X CANTIDAD DE VECES
+NumTotal.push(SumNum);// AGREGA EL RESULTADOR DE SumNum AL ARREGLO NumTotal
+}
+console.log(NumTotal)//MUESTRA EL RESULTADO 
+
+//CORRECTO
+
+
+
+// PRIMERO SE CREA UN ARREGLO CON LOS DIAS
+var dias= ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"]
+// LUEGO SE CREA EL CICLO FOR
+//i VALE 0
+// SI i ES MENOR O IGUAL A DIAS.LENGTH (QUE SERIA EL LARGO DE LOS ELEMENTOS(7)
+// i AUMENTARA SU VALOR EN 1
+for(i=0 ; i <= dias.length; i++){
+document.write(dias[i] + "<br>");// SE LLAMA AL ARREGLO DIAS
+                                // ESA i SIGNFICA INDICE Y QUE PASARIA POR CADA ELEMENTO DEL ARREGLO DIAS
+// SI COLOCO EN ESA i UN 3 SE REPETIRIA JUEVES 8 VECES
+// OSEA ESA I ES LA QUE PASA POR CADA ELEMENTO DEL ARREGLO
+// DSP br SOLO ES PARA QUE SALTE DE LINEA
+}
+
+//CORRECTO
+
+
+
+    </script>
+
+
+</body>
+</html>

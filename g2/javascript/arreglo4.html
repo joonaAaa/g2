@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+<script>
+
+var amigos = ["Carlos","Cesar","jona","nicole"];
+//0.para cambiar un elemento de un array se puede utilizar este codigo
+//se pone el nombre del array y el numero del elemento que queremos cambiar
+//y el nuevo elemento
+amigos[0]="arturo";
+
+//y para agregar tambien se puede con el mismo codigo de arriba
+amigos[4]="rose";
+// se poner un numero de un elemento inexistente para crearlo y asignarle un valor
+console.log(amigos);
+
+console.log("***********");
+
+//podemos concatenar un string mas el largo del arreglo amigos + otro string
+document.write("Tienes " + amigos.length + " amigos");
+
+//1.para añadir elementos al final del arreglo se usa PUSH
+amigos.push("Luis","fernando","luil");
+console.log(amigos);
+
+//2. para eliminar el ultimo elemento se utiliza el metodo POP
+amigos.pop();
+console.log(amigos);
+
+
+//3.para unir 2 o mas arreglos se usa el metodo CONCAT
+var amigos2=["Jose","Josepe","Luisa"];
+var amigos3=["Diana","Miya","Pablo"];
+
+// se crea el nombre del array que reunira los otros 2 arrays xd
+//luego se llama a amigos2 y dsp al otro array que es amigos3
+var amigosTodos= amigos2.concat(amigos3)
+console.log(amigosTodos);
+
+
+//4.para añadir algo entre los elementos del array se utiliza JOIN
+amigos2.join("-");
+document.write("<br>"+ amigos2);
+//se le agrega un - al medio de todos los elementos del arreglo
+//para hacer el codigo mas ordenado
+//se crea otro array y que el valor sea el resultado de amigos2.join("--");
+var amigos2Plus=amigos2.join("--");
+document.write("<br>"+ amigos2Plus);
+// osea lo join agrega algo entre medio de los elementos de un array
+
+
+
+//5.para ordenar alfabeticamene se utiliza el metodo SORT
+//se crea un array que su valor sea el resultado de amigos3.sort();
+var amigosTodosOrdenados= amigos3.sort();
+document.write("<br>"+ amigosTodosOrdenados);
+// sort ordena alfabeticamente
+
+
+//6.para agregar un elemto al INICIO del array se usa UNSHIFT
+amigos.unshift("Maria");
+document.write("<br>"+ amigos);
+
+
+//7.para eliminar el PRIMER elemento del array se utiliza SHIFT
+amigos.shift();
+document.write("<br>"+ amigos);
+
+
+//8. encontrar el indice de un elemento se usa indexof
+// con esto podemos saber en que posicion esta este elemento dentro del array
+//si esta ,sale el numero de donde esta el elemento
+console.log(amigos.indexOf("Luis"));
+//si no esta, sale -1
+console.log(amigos.indexOf("Javiera"));
+
+
+</script>
+    
+</body>
+</html>

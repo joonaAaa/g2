@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+       /* Eliminar las distancias que existen entre los ellemntos */
+  /* margin es la distancia que se tiene con las paredes */
+/* Padding va a generar una distancia sobre los elementos hijos */
+       *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+/* 3 Formas de asignar estilos 
+ 1. A traves del elemento (etiqueta) */
+/* color cambia el color a la letra  */
+p{ 
+color:antiquewhite;
+background-color:rgb(140, 231, 136);
+}
+/* div le cambia el color al recuadro de donde esten las letras */
+div{
+    background-color: lightskyblue;
+    width: 200px;
+    height: 200px;
+}
+
+a{
+    text-decoration:none ;
+    font-weight: 900;
+    font-size: 90% ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 2. A traves de clases
+Estilo a 1 0 mas elementos */
+.parrafo2{
+    color: lightblue blue;
+    background-color: lightslategray;
+}
+
+/* 3.A traves del identificador id # */
+/* El estilo solo se aplica a 1  un elemento */
+#parrafo4{
+
+color:  rgb(115, 4, 4);
+background-color: black;
+
+
+}
+#padre{
+background-color:blue;
+
+width: 400px;
+height: 400px;
+border: 1px solid salmon;
+}
+
+.hijos{
+
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+#hijo2{
+
+    margin: 170px;
+    height: 30px;
+    width: 200px;
+ 
+}
+</style>
+</head>
+<body>
+    <div>
+    <p>Parrafo 1</p>
+    <p class="parrafo2">Parrafo 2</p>
+    <p class="parrafo2">Parrafo 3</p>
+    <p class="parrafo2" id="parrafo4">Parrafo 4</p>
+    <a href="http://www.sii.cl">visite sii</a>
+</div>
+<br>
+<h2>margin y paddin</h2>
+<div id="padre">
+    <div class="hijos" id="hijo"></div>
+    <div class="hijos" id="hijo2"></div>
+    <div class="hijos" id="hijo3"></div>
+    <div class="hijos" id="hijo4"></div>
+</div>
+</body> 
+</html>

@@ -1,0 +1,20 @@
+h1 {
+    color: rgb(105, 105, 198);
+    font-size: medium;
+}
+
+.navbar {
+    background-color:#E6FDD3;
+}
+.navbar-brand{
+width: 100px;
+height: 100px;
+}
+.nav-element{
+    font-size: 30px;
+    font-family: 'Neucha';
+    color:#6CB18C;
+}
+a.nav-link{
+    color:#6CB18C;
+}

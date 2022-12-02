@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+
+    <script>
+ //funciones
+// trozo de codigo que solo se ejcutara cuando sea llamado//
+//realiza una accion especifica//
+
+
+
+
+// se crea la funcion
+//se le asigna un nombre a la funcion
+/*function nombre(){
+    //se le da instrucciones a la funcion
+    instrucciones
+}
+//finalmente se llama a la funcion
+nombre();*/
+
+
+
+function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+            ejemplo();
+
+            //() se le asigna el valor a una variable que solo funciona en la funcion
+            //en este caso es perro pero puede ser cuaqlquier nombre
+function imprimir(perro){//cantidad = 3
+            console.log("Tengo "+perro+" perros");
+        }
+        imprimir(3);
+
+        console.clear();
+
+
+//se crea una variable y se le asigna un valor
+        var numero_impar=5;
+//se crea una funcion,se le asigna un nombre y un parametro
+        function imprimirImpar(loc){
+            console.log("hola "+loc);
+            console.log("hola tengo "+ loc+ " dulces")
+            console.log("numero impar",numero_impar);
+            //se le asigna un nuevo valor a la variable
+            numero_impar=5;
+        }
+        //se llama a la funcion y que repita el valor de la variable numero_impar
+        //osea se repetira el valor de esa variable
+        imprimirImpar(numero_impar);
+        console.log("nuevo numero_impar",numero_impar);
+
+        console.clear();
+
+
+//se crea una funcion y se le asigna un nombre y parametros
+        function multiplacion(numero1, numero2){
+            //retorna el valor multiplicado 
+            return numero1*numero2;
+        }
+//siempre que se ocupe return tiene que haber algo que lo reciba, en este caso es una variable
+ // se crea una variable y se le asigna el valor del llamado a la funcion
+        var resultadoMultiplacion=multiplacion(10,5);
+        console.log("El resultado es",resultadoMultiplacion);
+    
+console.clear();
+
+     // se llama a una funcion llamada crear nuevo arreglo, que contiene un numero x
+        function crearNuevoArreglo(numero){
+            // se crea una variable llamada arreglo
+            var arreglo = [];//[0,1,2]
+            //este metodo es para recorrer el numero que ingrese el usuario
+            for(let i=0; i <= numero;i++){
+                //se le esta diciendo que cada numero se agrege al arreglo llamado arreglo xdd
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= prompt("ingresa un numero",0);
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+
+    </script>
+    
+</body>
+</html>

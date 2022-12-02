@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <!-- Etiquetas -->  
+
+    <label for="nombre">Nombre</label>
+    <!-- crea un recuardo para escribir -->
+    <!-- Id tiene que ser unico para esta pagina -->
+    <input type="text" id="nombre" name="nombre">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+<br>  
+<label for="password">ingresa la </label>
+<input type="password" id="password" name="password" placeholder="Ingresa la">
+
+<!-- Arriba solo cambia el input, que seria el tipo de valor a ingresar -->
+
+<br><hr>
+<!-- Radio button -->
+<label for="femenino">femenino</label>
+<input type="radio" id="Femenino" name="Sexo" value="Femenino">
+
+<label for="Masculino">Masculino</label>
+<input type="radio" id="Masculino" name="Sexo" value="Masculino">
+
+<label for="pnd">PND</label>
+<input type="radio" id="pnd" name="Sexo" value="pnd">
+<!-- Se repiten los name en radio button porque o sino el codigo entiende que son diferentes selecciones,
+al hacerlo todos con un mismo nombre el codigo entiende que es un conjunto de opciones -->
+
+<br><hr>
+
+<!-- Select o combobox -->
+<h2>Selectores</h2>
+<select name="Sexo2" id="Sexo2">
+    <option value="0">Seleccione su sexo</option>
+    <option value="Femenino">Femenino</option>
+    <option value="Masculino">Masculino</option>
+    <option value="pnd">PND</option>
+</select>
+
+<!-- checkboxes nos permite seleccionar mas de una opcion -->
+<h2>checkboxes</h2>
+
+<input type="checkbox" id="Lunes" name="Semana" value="1">
+<label for="Lunes">Lunes</label>
+<br>
+<input type="checkbox" id="Martes" name="Semana" value="2">
+<label for="Martes">Martes</label>
+<br>
+<input type="checkbox" id="Miercoles" name="Semana" value="3">
+<label for="Miercoles">Miercoles</label>
+<br>
+<input type="checkbox" id="Jueves" name="Semana" value="4">
+<label for="Jueves">Jueves</label>
+<br>
+<input type="checkbox" id="Viernes" name="Semana" value="5">
+<label for="Viernes">Viernes</label>
+<br>
+<input type="checkbox" id="Sabado" name="Semana" value="6">
+<label for="Sabado">Sabado</label>
+<br><hr>
+<!-- textarea-->
+<textarea id="descripcion" name="descripcion" rows="10" cols="10"></textarea>
+<br><hr>
+
+<!-- Hidden es un cuadro oculto -->
+<input type="hidden" id="" name="">
+
+<br><hr>
+
+<!-- Botones -->
+<h2>Botones</h2>
+<input type="button" value="Aceptar" onclick="alert('wena')"">
+<input type="submit" value="Enviar">
+
+
+
+
+</body>
+</html>
