@@ -18,3 +18,24 @@ height: 100px;
 a.nav-link{
     color:#6CB18C;
 }
+.pantalla2{
+    font-size: 48px;
+    font-family: 'Neucha';
+    background-color: rgb(249, 249, 249);
+    margin-left: 600px;
+    color:#6CB18C;
+    display: inline-block;
+
+}
+.pantalla3{
+    font-size: 25px;
+    color: #B17B6C ;
+    background-color: antiquewhite;
+    margin-left: 500px;
+    display: inline-block;
+}
+.logo2{
+    margin-left: 100px;
+    display: inline-block;
+}
+
